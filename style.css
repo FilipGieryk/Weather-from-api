@@ -1,0 +1,140 @@
+@font-face {
+  font-family: myFont;
+  src: url(myfont.ttf);
+}
+#outer-layer {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#border {
+  width: 70%;
+  margin: 2% auto;
+  height: 100%;
+
+  border-radius: 100px 100px 100px 100px;
+  padding: 4%;
+
+  -webkit-box-shadow: inset 1px 5px 36px -1px rgba(54, 62, 117, 1);
+  -moz-box-shadow: inset 1px 5px 36px -1px rgba(54, 62, 117, 1);
+  box-shadow: inset 1px 5px 36px -1px rgba(54, 62, 117, 1);
+}
+.small-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+p,
+div {
+  color: rgb(212, 218, 198);
+}
+
+#weather-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 3%;
+  font-size: 30px;
+}
+
+#left-side {
+  display: flex;
+  width: 20em;
+  align-items: center;
+}
+#left-side * {
+  margin: 0;
+}
+#right-side {
+  display: block;
+  text-align: end;
+  margin: 0;
+}
+#right-side > * {
+  margin: 0;
+}
+#temp-number {
+  grid-area: temp;
+}
+#scale {
+  grid-area: scale;
+}
+#graph-choice {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+#graph-hours {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 10px auto;
+}
+#middle {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 20em 5em;
+}
+#graph-hours div {
+  font-size: 14px;
+}
+#rain-graph {
+  /* display: grid; */
+  display: none;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(8, 1fr);
+  width: 100%;
+  margin: auto;
+  height: 100%;
+}
+#wind-graph {
+  /* display: grid; */
+  display: none;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(8, 1fr);
+  width: 100%;
+  margin: auto;
+  height: 100%;
+}
+#temp-graph {
+  width: 100%;
+  margin: auto;
+}
+#temp-graph polyline {
+  bottom: 0;
+  margin: auto;
+}
+
+[data-water-line] {
+  border-top: solid rgb(36, 115, 121) 1px;
+  background-color: #8ae0ed;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+[data-wind-dir] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  content: "dasd";
+}
+.graph-container {
+  position: relative;
+  text-align: center;
+}
+.day {
+  text-align: center;
+}
+#temperatures-num {
+  display: flex;
+  justify-content: space-evenly;
+}
+#rain-bar {
+  height: 100%;
+}
+[data-wind-dir] img {
+  width: 30px;
+  color: greenyellow;
+}
+/* weather hourly dodac do graph-hours
+zrobic grafy  */
